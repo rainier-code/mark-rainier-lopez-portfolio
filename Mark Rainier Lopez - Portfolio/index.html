@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mark Rainier Lopez — Computer Engineering Portfolio">
+
+  <title>Mark Rainier Lopez | Computer Engineering Portfolio</title>
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       SIDEBAR
+  ========================================================== -->
+
+  <aside class="sidebar" id="sidebar">
+
+    <!-- Sidebar Header -->
+    <div class="sidebar-top">
+
+      <a class="brand" href="#home" data-section="home">
+        <span class="brand-mark">MRL</span>
+
+        <span class="brand-text">
+          <strong>MARK RAINIER</strong>
+          <small>COMPUTER ENGINEERING</small>
+        </span>
+      </a>
+
+      <button
+        class="mobile-close"
+        id="mobileClose"
+        aria-label="Close navigation"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+    </div>
+
+
+    <!-- Navigation Label -->
+    <div class="sidebar-label">
+      NAVIGATION
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="side-nav" id="sideNav">
+
+      <!-- Home -->
+      <a href="#home" data-section="home" class="nav-item active">
+        <span class="nav-icon">
+          <i class="fa-solid fa-house"></i>
+        </span>
+
+        <span class="nav-copy">
+          <strong>Home</strong>
+          <small>Portfolio overview</small>
+        </span>
+
+        <i class="fa-solid fa-chevron-right nav-arrow"></i>
+      </a>
+
+
+      <!-- About -->
+      <a href="#about" data-section="about" class="nav-item">
+        <span class="nav-icon">
+          <i class="fa-solid fa-user"></i>
+        </span>
+
+        <span class="nav-copy">
+          <strong>About</strong>
+          <small>Background & focus</small>
+        </span>
+
+        <i class="fa-solid fa-chevron-right nav-arrow"></i>
+      </a>
+
+
+      <!-- Resume -->
+      <a href="#resume" data-section="resume" class="nav-item">
+        <span class="nav-icon">
+          <i class="fa-solid fa-file-lines"></i>
+        </span>
+
+        <span class="nav-copy">
+          <strong>Resume</strong>
+          <small>Professional overview</small>
+        </span>
+
+        <i class="fa-solid fa-chevron-right nav-arrow"></i>
+      </a>
+
+
+      <!-- Projects -->
+      <a href="#projects" data-section="projects" class="nav-item">
+        <span class="nav-icon">
+          <i class="fa-solid fa-diagram-project"></i>
+        </span>
+
+        <span class="nav-copy">
+          <strong>Projects</strong>
+          <small>Selected technical work</small>
+        </span>
+
+        <i class="fa-solid fa-chevron-right nav-arrow"></i>
+      </a>
+
+
+      <!-- Skills -->
+      <a href="#skills" data-section="skills" class="nav-item">
+        <span class="nav-icon">
+          <i class="fa-solid fa-layer-group"></i>
+        </span>
+
+        <span class="nav-copy">
+          <strong>Skills</strong>
+          <small>Technical toolkit</small>
+        </span>
+
+        <i class="fa-solid fa-chevron-right nav-arrow"></i>
+      </a>
+
+
+      <!-- Credentials -->
+      <a href="#credentials" data-section="credentials" class="nav-item">
+        <span class="nav-icon">
+          <i class="fa-solid fa-award"></i>
+        </span>
+
+        <span class="nav-copy">
+          <strong>Credentials</strong>
+          <small>Education & certificates</small>
+        </span>
+
+        <i class="fa-solid fa-chevron-right nav-arrow"></i>
+      </a>
+
+
+      <!-- Contact -->
+      <a href="#contact" data-section="contact" class="nav-item">
+        <span class="nav-icon">
+          <i class="fa-solid fa-paper-plane"></i>
+        </span>
+
+        <span class="nav-copy">
+          <strong>Contact</strong>
+          <small>Let's connect</small>
+        </span>
+
+        <i class="fa-solid fa-chevron-right nav-arrow"></i>
+      </a>
+
+    </nav>
+
+
+    <!-- Theme Toggle -->
+    <div class="sidebar-bottom">
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-label="Toggle dark mode"
+      >
+        <span class="theme-icon">
+          <i class="fa-solid fa-moon"></i>
+        </span>
+
+        <span class="theme-copy">
+          <strong>Dark Mode</strong>
+          <small>Change appearance</small>
+        </span>
+
+        <span class="theme-switch">
+          <span></span>
+        </span>
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- =========================================================
+       MOBILE SIDEBAR OVERLAY
+  ========================================================== -->
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+  <!-- =========================================================
+       MAIN CONTENT
+  ========================================================== -->
+
+  <main class="main-content">
+
+    <!-- =======================================================
+         MOBILE HEADER
+    ======================================================== -->
+
+    <header class="mobile-header">
+
+      <a href="#home" class="mobile-brand" data-section="home">
+        <span class="brand-mark">MRL</span>
+        <span>MARK RAINIER LOPEZ</span>
+      </a>
+
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenu"
+        aria-label="Open navigation"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </header>
+
+
+    <!-- =======================================================
+         HOME / MAIN MENU
+    ======================================================== -->
+
+    <section class="page-section home-section active-section" id="home">
+
+      <div class="home-container">
+
+        <!-- Hero -->
+        <div class="home-intro">
+
+          <!-- Hero Text -->
+          <div class="hero-copy">
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-microchip"></i>
+              COMPUTER ENGINEERING PORTFOLIO
+            </p>
+
+            <h1>
+              Building practical solutions at the intersection of
+              <span>hardware & software.</span>
+            </h1>
+
+            <p class="hero-text">
+              Computer Engineering graduate focused on embedded systems, IoT, automation,
+              and software development. I enjoy turning technical ideas into working,
+              useful systems.
+            </p>
+
+            <div class="hero-actions">
+
+              <a
+                class="btn btn-primary"
+                href="#projects"
+                data-section="projects"
+              >
+                <i class="fa-solid fa-code"></i>
+                Explore My Work
+              </a>
+
+              <a
+                class="btn btn-ghost"
+                href="assets/resume.pdf"
+                download
+              >
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download CV
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- Engineer Profile Terminal -->
+          <div class="hero-card">
+
+            <div class="terminal-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <small>engineer.profile</small>
+            </div>
+
+            <div class="terminal-body">
+
+              <p>
+                <span class="code-blue">const</span> engineer = {
+              </p>
+
+              <p>
+                &nbsp;&nbsp;name:
+                <span class="code-green">"Mark Rainier Lopez"</span>,
+              </p>
+
+              <p>
+                &nbsp;&nbsp;degree:
+                <span class="code-green">"Computer Engineering"</span>,
+              </p>
+
+              <p>
+                &nbsp;&nbsp;focus: [
+              </p>
+
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="code-green">"IoT"</span>,
+                <span class="code-green">"Embedded Systems"</span>,
+              </p>
+
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="code-green">"Automation"</span>,
+                <span class="code-green">"Software"</span>
+              </p>
+
+              <p>
+                &nbsp;&nbsp;],
+              </p>
+
+              <p>
+                &nbsp;&nbsp;mindset:
+                <span class="code-green">"Build. Test. Improve."</span>
+              </p>
+
+              <p>};</p>
+
+              <div class="terminal-status">
+                <i class="fa-solid fa-circle"></i>
+                Available for opportunities
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             MAIN MENU
+        ====================================================== -->
+
+        <div class="menu-heading">
+
+          <div>
+            <p class="eyebrow">
+              <i class="fa-solid fa-compass"></i>
+              EXPLORE
+            </p>
+
+            <h2>Explore my portfolio.</h2>
+          </div>
+
+          <p>
+            Choose a section to view the details.
+          </p>
+
+        </div>
+
+
+        <!-- Main Menu Cards -->
+        <div class="menu-grid">
+
+          <!-- About -->
+          <a
+            href="#about"
+            data-section="about"
+            class="menu-card menu-about"
+          >
+            <span class="menu-card-number">01</span>
+
+            <div class="menu-card-icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="menu-card-content">
+              <small>ABOUT ME</small>
+              <h3>Who I am</h3>
+              <p>Background, interests, and engineering focus.</p>
+            </div>
+
+            <span class="menu-card-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+
+          <!-- Resume -->
+          <a
+            href="#resume"
+            data-section="resume"
+            class="menu-card menu-resume"
+          >
+            <span class="menu-card-number">02</span>
+
+            <div class="menu-card-icon">
+              <i class="fa-solid fa-file-lines"></i>
+            </div>
+
+            <div class="menu-card-content">
+              <small>RESUME</small>
+              <h3>Professional overview</h3>
+              <p>
+                Education, experience, projects, and
+                <br>
+                certifications.
+              </p>
+            </div>
+
+            <span class="menu-card-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+
+          <!-- Projects -->
+          <a
+            href="#projects"
+            data-section="projects"
+            class="menu-card menu-projects"
+          >
+            <span class="menu-card-number">03</span>
+
+            <div class="menu-card-icon">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+
+            <div class="menu-card-content">
+              <small>PROJECTS</small>
+              <h3>What I build</h3>
+              <p>
+                Selected hardware, IoT, electronics, and software projects.
+              </p>
+            </div>
+
+            <span class="menu-card-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+
+          <!-- Skills -->
+          <a
+            href="#skills"
+            data-section="skills"
+            class="menu-card menu-skills"
+          >
+            <span class="menu-card-number">04</span>
+
+            <div class="menu-card-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div class="menu-card-content">
+              <small>SKILLS</small>
+              <h3>Technical toolkit</h3>
+              <p>
+                Programming, hardware, networking, and development tools.
+              </p>
+            </div>
+
+            <span class="menu-card-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+
+          <!-- Credentials -->
+          <a
+            href="#credentials"
+            data-section="credentials"
+            class="menu-card menu-credentials"
+          >
+            <span class="menu-card-number">05</span>
+
+            <div class="menu-card-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+
+            <div class="menu-card-content">
+              <small>CREDENTIALS</small>
+              <h3>Achievements</h3>
+              <p>
+                Academic honors and relevant certifications.
+              </p>
+            </div>
+
+            <span class="menu-card-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+
+          <!-- Contact -->
+          <a
+            href="#contact"
+            data-section="contact"
+            class="menu-card menu-contact"
+          >
+            <span class="menu-card-number">06</span>
+
+            <div class="menu-card-icon">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+
+            <div class="menu-card-content">
+              <small>CONTACT</small>
+              <h3>Let's connect</h3>
+              <p>
+                For opportunities, collaboration, or inquiries.
+              </p>
+            </div>
+
+            <span class="menu-card-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ABOUT
+    ======================================================== -->
+
+    <section class="page-section" id="about">
+
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-head">
+
+          <div>
+            <p class="eyebrow">
+              <i class="fa-solid fa-user"></i>
+              01 / ABOUT ME
+            </p>
+
+            <h2>Engineer with a builder's mindset.</h2>
+          </div>
+
+          <p>
+            My portfolio shows not only what I have learned, but how I apply it
+            through projects, technical work, and continuous learning.
+          </p>
+
+        </div>
+
+
+        <!-- About Content -->
+        <div class="about-grid">
+
+          <!-- Profile Photo -->
+          <div class="about-photo">
+
+            <img
+              src="assets/profile.jpg"
+              alt="Mark Rainier Lopez profile photo"
+            >
+
+            <div class="photo-label">
+              <i class="fa-solid fa-graduation-cap"></i>
+              Computer Engineering Graduate
+            </div>
+
+          </div>
+
+
+          <!-- About Text -->
+          <div class="about-content">
+
+            <p>
+              I am a Computer Engineering graduate with a strong foundation in hardware,
+              software, programming, microcontrollers, and system design. My interests
+              include IoT and automation, especially solutions that connect physical
+              systems with useful software.
+            </p>
+
+            <p>
+              I am also interested in growing through real-world engineering work,
+              learning new technologies, and contributing to teams that value practical
+              problem solving and continuous improvement.
+            </p>
+
+
+            <!-- About Mini Cards -->
+            <div class="mini-cards">
+
+              <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <strong>Build</strong>
+                <span>Hardware & software systems</span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-lightbulb"></i>
+                <strong>Solve</strong>
+                <span>Practical technical problems</span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <strong>Grow</strong>
+                <span>Learn and improve continuously</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         RESUME
+    ======================================================== -->
+
+    <section class="page-section" id="resume">
+
+      <div class="container resume-page">
+
+        <div class="resume-banner">
+
+          <div>
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-file-lines"></i>
+              02 / RESUME
+            </p>
+
+            <h2>Want the complete professional overview?</h2>
+
+            <p>
+              Download my updated CV for education, experience, projects,
+              technical skills, and certifications.
+            </p>
+
+          </div>
+
+          <a
+            class="btn btn-primary"
+            href="assets/resume.pdf"
+            download
+          >
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         PROJECTS
+    ======================================================== -->
+
+    <section class="page-section" id="projects">
+
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-head">
+
+          <div>
+            <p class="eyebrow">
+              <i class="fa-solid fa-diagram-project"></i>
+              03 / BEST PROJECT SAMPLES
+            </p>
+
+            <h2>Projects that show how I build.</h2>
+          </div>
+
+          <p>
+            Click a card to flip it for a quick summary, then open the
+            full case study for the problem, how it works, and what I learned.
+          </p>
+
+        </div>
+
+
+        <!-- =====================================================
+             PROJECT CARDS
+        ====================================================== -->
+
+        <div class="project-grid">
+
+          <!-- PROJECT 01: SMART SILONG -->
+          <article
+            class="flip-card project-large"
+            tabindex="0"
+            aria-label="Smart Silong project"
+          >
+
+            <div class="flip-inner">
+
+              <!-- Front -->
+              <div
+                class="flip-front"
+                style="background-image:linear-gradient(180deg,transparent 30%,rgba(4,8,18,.95)),url('assets/projects/smart-silong.jpg')"
+              >
+
+                <span class="project-number">01</span>
+
+                <div class="card-caption">
+
+                  <span>
+                    <i class="fa-solid fa-wifi"></i>
+                    IoT • Embedded Systems
+                  </span>
+
+                  <h3>Smart Silong</h3>
+
+                  <small>
+                    <i class="fa-solid fa-hand-pointer"></i>
+                    Click to view
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <!-- Back -->
+              <div class="flip-back">
+
+                <span class="project-number">01</span>
+
+                <div class="icon-box">
+                  <i class="fa-solid fa-cloud-sun-rain"></i>
+                </div>
+
+                <h3>Smart Silong</h3>
+
+                <p>
+                  IoT-based smart clothing rack using ESP32, environmental
+                  sensors, Blynk IoT, and solar power.
+                </p>
+
+                <div class="tags">
+                  <span>ESP32</span>
+                  <span>DHT11</span>
+                  <span>YL-83</span>
+                  <span>MQ-135</span>
+                  <span>Blynk</span>
+                </div>
+
+                <ul>
+                  <li>Real-time mobile monitoring</li>
+                  <li>Remote control and automation</li>
+                  <li>Environmental sensor integration</li>
+                  <li>Energy-efficient operation</li>
+                </ul>
+
+                <div class="project-actions">
+
+                  <button
+                    type="button"
+                    class="view-photos-btn"
+                  >
+                    <i class="fa-solid fa-images"></i>
+                    View Photos
+                  </button>
+
+                  <button
+                    type="button"
+                    class="project-detail-btn"
+                    data-detail="detailSilong"
+                  >
+                    <i class="fa-solid fa-book-open"></i>
+                    Case Study
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- PROJECT 02: MAGIC SCHEDULER -->
+          <article
+            class="flip-card project-small"
+            tabindex="0"
+            aria-label="Magic Scheduler project"
+          >
+
+            <div class="flip-inner">
+
+              <!-- Front -->
+              <div
+                class="flip-front"
+                style="background-image:linear-gradient(180deg,transparent 30%,rgba(4,8,18,.95)),url('assets/projects/magic-scheduler.jpg')"
+              >
+
+                <span class="project-number">02</span>
+
+                <div class="card-caption">
+
+                  <span>
+                    <i class="fa-solid fa-server"></i>
+                    Full-Stack Web Development
+                  </span>
+
+                  <h3>Magic Scheduler</h3>
+
+                  <small>
+                    <i class="fa-solid fa-hand-pointer"></i>
+                    Click to view
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <!-- Back -->
+              <div class="flip-back">
+
+                <span class="project-number">02</span>
+
+                <div class="icon-box">
+                  <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <h3>Magic Scheduler</h3>
+
+                <p>
+                  Full-stack web app for managing magic performance bookings,
+                  clients, schedules, locations, and payments.
+                </p>
+
+                <div class="tags">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                  <span>REST API</span>
+                </div>
+
+                <ul>
+                  <li>Event scheduling and calendar</li>
+                  <li>Client and performer management</li>
+                  <li>Payment and downpayment tracking</li>
+                  <li>Distance calculation and responsive dashboard</li>
+                </ul>
+
+                <div class="project-actions">
+
+                  <button
+                    type="button"
+                    class="magic-scheduler-media-btn"
+                  >
+                    <i class="fa-solid fa-photo-film"></i>
+                    View Media
+                  </button>
+
+                  <button
+                    type="button"
+                    class="project-detail-btn"
+                    data-detail="detailMagic"
+                  >
+                    <i class="fa-solid fa-book-open"></i>
+                    Case Study
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 03: MINIATURE TRAFFIC LIGHT -->
+          <article
+            class="flip-card project-medium"
+            tabindex="0"
+            aria-label="Miniature Traffic Light project"
+          >
+
+            <div class="flip-inner">
+
+              <!-- Front -->
+              <div
+                class="flip-front"
+                style="background-image:linear-gradient(180deg,transparent 30%,rgba(4,8,18,.95)),url('assets/projects/traffic.jpg')"
+              >
+
+                <span class="project-number">03</span>
+
+                <div class="card-caption">
+
+                  <span>
+                    <i class="fa-solid fa-traffic-light"></i>
+                    Digital Electronics
+                  </span>
+
+                  <h3>Miniature Traffic Light</h3>
+
+                  <small>
+                    <i class="fa-solid fa-hand-pointer"></i>
+                    Click to view
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <!-- Back -->
+              <div class="flip-back">
+
+                <span class="project-number">03</span>
+
+                <div class="icon-box">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <h3>Miniature Traffic Light</h3>
+
+                <p>
+                  Hardware-based traffic light system using a 555 Timer
+                  and 7474 Flip-Flop for sequential signal control.
+                </p>
+
+                <div class="tags">
+                  <span>555 Timer</span>
+                  <span>7474</span>
+                  <span>Digital Logic</span>
+                </div>
+
+                <ul>
+                  <li>Sequential timing circuit</li>
+                  <li>Red / Yellow / Green signals</li>
+                  <li>Digital electronics project</li>
+                </ul>
+
+                <div class="project-actions">
+
+                  <button
+                    class="traffic-media-btn"
+                    type="button"
+                  >
+                    <i class="fa-solid fa-photo-film"></i>
+                    View Media
+                  </button>
+
+                  <button
+                    type="button"
+                    class="project-detail-btn"
+                    data-detail="detailTraffic"
+                  >
+                    <i class="fa-solid fa-book-open"></i>
+                    Case Study
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- =====================================================
+             PROJECT PROCESS
+        ====================================================== -->
+
+        <div class="process">
+
+          <div class="process-title">
+            <i class="fa-solid fa-route"></i>
+            <span>MY PROJECT APPROACH</span>
+          </div>
+
+          <div class="process-step">
+            <b>01</b>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Understand</span>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-step">
+            <b>02</b>
+            <i class="fa-solid fa-pen-ruler"></i>
+            <span>Design</span>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-step">
+            <b>03</b>
+            <i class="fa-solid fa-code"></i>
+            <span>Build</span>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-step">
+            <b>04</b>
+            <i class="fa-solid fa-vial"></i>
+            <span>Test</span>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-step">
+            <b>05</b>
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <span>Improve</span>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!-- =====================================================
+           SMART SILONG PHOTO MODAL
+      ====================================================== -->
+
+      <div class="photo-modal" id="photoModal">
+
+        <div class="photo-modal-overlay"></div>
+
+        <div class="photo-modal-content">
+
+          <button
+            class="photo-modal-close"
+            aria-label="Close photos"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="photo-modal-header">
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-images"></i>
+              PROJECT PHOTOS
+            </p>
+
+            <h2 id="photoModalTitle">
+              Smart Silong
+            </h2>
+
+          </div>
+
+          <div class="photo-gallery" id="photoGallery">
+
+            <div class="project-photo">
+              <img
+                src="assets/projects/smart-silong-1.jpg"
+                alt="Smart Silong project photo 1"
+              >
+            </div>
+
+            <div class="project-photo">
+              <img
+                src="assets/projects/smart-silong-2.jpg"
+                alt="Smart Silong project photo 2"
+              >
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- =====================================================
+          MAGIC SCHEDULER MEDIA MODAL
+      ====================================================== -->
+
+      <div class="modal" id="magicSchedulerModal">
+
+        <div class="modal-content">
+
+          <!-- Close Button -->
+          <button
+            class="close-btn"
+            type="button"
+            aria-label="Close Magic Scheduler media"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+
+          <!-- Modal Header -->
+          <div class="photo-modal-header">
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-photo-film"></i>
+              PROJECT MEDIA
+            </p>
+
+            <h2>Magic Scheduler</h2>
+
+          </div>
+
+
+          <!-- Description -->
+          <p>
+            Full-stack event management application built to manage
+            magic performance bookings, clients, schedules, locations,
+            performers, and payments.
+          </p>
+
+
+          <!-- Project Images -->
+          <div class="traffic-modal-media">
+
+            <img
+              src="assets/projects/magic-scheduler-1.jpg"
+              alt="Magic Scheduler dashboard"
+            >
+
+            <img
+              src="assets/projects/magic-scheduler-2.jpg"
+              alt="Magic Scheduler calendar"
+            >
+
+          </div>
+
+
+          <!-- Project Links -->
+          <div class="modal-project-links">
+
+            <a
+              href="https://magic-scheduler-mu.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              <i class="fa-solid fa-globe"></i>
+              Open Live Demo
+            </a>
+
+            <a
+              href="https://github.com/rainier-code/magic-scheduler"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-ghost"
+            >
+              <i class="fa-brands fa-github"></i>
+              View GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- =====================================================
+           TRAFFIC LIGHT MEDIA MODAL
+      ====================================================== -->
+
+      <div class="modal" id="trafficModal">
+
+        <div class="modal-content">
+
+          <button
+            class="close-btn"
+            aria-label="Close project media"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="photo-modal-header">
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-photo-film"></i>
+              PROJECT MEDIA
+            </p>
+
+            <h2>Miniature Traffic Light System</h2>
+
+          </div>
+
+          <p>
+            Project gallery containing the actual project photo and
+            demonstration video.
+          </p>
+
+          <div class="traffic-modal-media">
+
+            <img
+              src="assets/projects/traffic-photo.jpeg"
+              alt="Traffic Light Project"
+            >
+
+            <video controls>
+              <source
+                src="assets/projects/traffic-demo.mp4"
+                type="video/mp4"
+              >
+            </video>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           PROJECT 01 DETAILS: SMART SILONG
+      ====================================================== -->
+
+      <div class="modal project-detail" id="detailSilong">
+
+        <div class="modal-content detail-content">
+
+          <button
+            class="close-btn"
+            type="button"
+            aria-label="Close Smart Silong details"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="photo-modal-header">
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-wifi"></i>
+              PROJECT 01 / IOT • EMBEDDED SYSTEMS
+            </p>
+
+            <h2>Smart Silong</h2>
+
+          </div>
+
+          <p class="detail-lead">An IoT-based smart clothing rack that monitors its surroundings and can be watched and controlled from a phone, powered by solar energy.</p>
+
+          <div class="detail-meta"><div><small>Category</small><strong>IoT / Embedded</strong></div><div><small>Core board</small><strong>ESP32</strong></div><div><small>Interface</small><strong>Blynk mobile app</strong></div><div><small>Power</small><strong>Solar</strong></div></div>
+
+          <div class="detail-grid">
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-bullseye"></i> The problem</h3>
+              <p>Drying laundry outdoors depends on weather that can change quickly. The goal was a rack that senses its environment and reports conditions, so the user is not guessing.</p>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-gears"></i> How it works</h3>
+              <p>Sensors measure temperature and humidity (DHT11), rain (YL-83), and air quality (MQ-135). The ESP32 reads them, sends the data to Blynk for real-time monitoring, and accepts remote commands for control and automation. A solar supply keeps the system energy-efficient.</p>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-list-check"></i> Key features</h3>
+              <ul><li>Real-time mobile monitoring</li><li>Remote control and automation</li><li>Environmental sensor integration</li><li>Energy-efficient, solar-powered operation</li></ul>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-graduation-cap"></i> What I learned</h3>
+              <ul><li>Wiring and calibrating multiple sensors on one microcontroller</li><li>Building an IoT dashboard and device-to-cloud communication</li><li>Designing around a limited power budget</li></ul>
+            </section>
+
+          </div>
+
+          <div class="detail-stack">
+            <small>TECH STACK</small>
+            <div class="tags"><span>ESP32</span><span>DHT11</span><span>YL-83</span><span>MQ-135</span><span>Blynk</span><span>Solar power</span></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- =====================================================
+           PROJECT 02 DETAILS: MAGIC SCHEDULER
+      ====================================================== -->
+
+      <div class="modal project-detail" id="detailMagic">
+
+        <div class="modal-content detail-content">
+
+          <button
+            class="close-btn"
+            type="button"
+            aria-label="Close Magic Scheduler details"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="photo-modal-header">
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-server"></i>
+              PROJECT 02 / FULL-STACK WEB DEVELOPMENT
+            </p>
+
+            <h2>Magic Scheduler</h2>
+
+          </div>
+
+          <p class="detail-lead">A full-stack event management web application for organizing magic performance bookings, clients, schedules, locations, performers, and payments.</p>
+
+          <div class="detail-meta"><div><small>Category</small><strong>Full-stack web</strong></div><div><small>Frontend</small><strong>React</strong></div><div><small>Backend</small><strong>Node.js / Express</strong></div><div><small>Database</small><strong>MongoDB</strong></div></div>
+
+          <div class="detail-grid">
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-bullseye"></i> The problem</h3>
+              <p>Running a performance business means juggling bookings, client details, performer availability, venues, and downpayments. Doing this by hand or across chats is easy to get wrong.</p>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-gears"></i> How it works</h3>
+              <p>A React dashboard talks to a Node.js and Express REST API backed by MongoDB. Events appear on a calendar, each tied to a client, performer, location, and payment status, and the system calculates travel distance to the venue.</p>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-list-check"></i> Key features</h3>
+              <ul><li>Event scheduling and calendar management</li><li>Client and performer management</li><li>Payment and downpayment tracking</li><li>Location and distance calculation</li><li>Responsive dashboard and mobile layout</li></ul>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-graduation-cap"></i> What I learned</h3>
+              <ul><li>Designing a data model that links events, clients, performers, and payments</li><li>Building and consuming a REST API end to end</li><li>Making a data-heavy dashboard usable on mobile</li></ul>
+            </section>
+
+          </div>
+
+          <div class="detail-stack">
+            <small>TECH STACK</small>
+            <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST API</span><span>Vercel</span></div>
+          </div>
+
+          <div class="modal-project-links">
+
+            <a
+              href="https://magic-scheduler-mu.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              <i class="fa-solid fa-globe"></i>
+              Open Live Demo
+            </a>
+
+            <a
+              href="https://github.com/rainier-code/magic-scheduler"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-ghost"
+            >
+              <i class="fa-brands fa-github"></i>
+              View GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- =====================================================
+           PROJECT 03 DETAILS: MINIATURE TRAFFIC LIGHT
+      ====================================================== -->
+
+      <div class="modal project-detail" id="detailTraffic">
+
+        <div class="modal-content detail-content">
+
+          <button
+            class="close-btn"
+            type="button"
+            aria-label="Close Miniature Traffic Light details"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="photo-modal-header">
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-traffic-light"></i>
+              PROJECT 03 / DIGITAL ELECTRONICS
+            </p>
+
+            <h2>Miniature Traffic Light</h2>
+
+          </div>
+
+          <p class="detail-lead">A hardware-based traffic light system that uses a 555 timer and a 7474 flip-flop for sequential signal control, with no microcontroller.</p>
+
+          <div class="detail-meta"><div><small>Category</small><strong>Digital electronics</strong></div><div><small>Timing</small><strong>555 Timer</strong></div><div><small>Logic</small><strong>7474 Flip-Flop</strong></div><div><small>Output</small><strong>Red / Yellow / Green</strong></div></div>
+
+          <div class="detail-grid">
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-bullseye"></i> The problem</h3>
+              <p>The challenge was to control a traffic signal sequence using only discrete digital logic, showing how timing and state can be built from basic components.</p>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-gears"></i> How it works</h3>
+              <p>The 555 timer provides the clock pulses that set the timing. The 7474 flip-flops hold the current state and step through the sequence, driving the red, yellow, and green signals in order.</p>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-list-check"></i> Key features</h3>
+              <ul><li>Sequential timing circuit</li><li>Red / Yellow / Green signal sequence</li><li>Built entirely from digital logic ICs</li></ul>
+            </section>
+
+            <section class="detail-block">
+              <h3><i class="fa-solid fa-graduation-cap"></i> What I learned</h3>
+              <ul><li>Applying timing and sequential logic in a real circuit</li><li>Debugging hardware step by step with test equipment</li><li>Turning a theory topic into a working demo</li></ul>
+            </section>
+
+          </div>
+
+          <div class="detail-stack">
+            <small>TECH STACK</small>
+            <div class="tags"><span>555 Timer</span><span>7474</span><span>Digital Logic</span><span>Breadboard / Circuit</span></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    <!-- =======================================================
+         SKILLS
+    ======================================================== -->
+
+    <section class="page-section" id="skills">
+
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-head">
+
+          <div>
+            <p class="eyebrow">
+              <i class="fa-solid fa-layer-group"></i>
+              04 / SKILLS
+            </p>
+
+            <h2>Technical skills.</h2>
+          </div>
+
+          <p>
+            A mix of programming, hardware, networking, development,
+            and design tools developed through academic and project experience.
+          </p>
+
+        </div>
+
+
+        <!-- =====================================================
+             SKILLS GRID
+        ====================================================== -->
+
+        <div class="skills-grid">
+
+          <!-- Programming Languages -->
+          <div class="skill-card skill-featured">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <p>Programming Languages</p>
+
+            <div class="skill-list">
+
+              <span>
+                <i class="fa-brands fa-python"></i>
+                Python
+              </span>
+
+              <span>
+                <i class="fa-solid fa-c"></i>
+                C
+              </span>
+
+              <span>
+                <i class="fa-solid fa-code"></i>
+                C++
+              </span>
+
+              <span>
+                <i class="fa-brands fa-js"></i>
+                JavaScript
+              </span>
+
+              <span>
+                <i class="fa-solid fa-microchip"></i>
+                Verilog
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Web & Database -->
+          <div class="skill-card">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+
+            <p>Web & Database</p>
+
+            <div class="skill-list">
+
+              <span>
+                <i class="fa-brands fa-html5"></i>
+                HTML
+              </span>
+
+              <span>
+                <i class="fa-brands fa-css3-alt"></i>
+                CSS
+              </span>
+
+              <span>
+                <i class="fa-solid fa-database"></i>
+                MySQL
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Embedded Systems & Hardware -->
+          <div class="skill-card skill-wide">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+
+            <p>Embedded Systems & Hardware</p>
+
+            <div class="skill-list">
+
+              <span>
+                <i class="fa-solid fa-microchip"></i>
+                Arduino
+              </span>
+
+              <span>
+                <i class="fa-solid fa-microchip"></i>
+                ESP32
+              </span>
+
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                GSM Module
+              </span>
+
+              <span>
+                <i class="fa-solid fa-temperature-half"></i>
+                Sensor Integration
+              </span>
+
+              <span>
+                <i class="fa-solid fa-memory"></i>
+                PCB Design Basics
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Software & Development Tools -->
+          <div class="skill-card">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+
+            <p>Software & Development Tools</p>
+
+            <div class="skill-list">
+
+              <span>
+                <i class="fa-solid fa-code"></i>
+                Arduino IDE
+              </span>
+
+              <span>
+                <i class="fa-brands fa-github"></i>
+                Github
+              </span>
+
+              <span>
+                <i class="fa-solid fa-code"></i>
+                Visual Studio Code
+              </span>
+
+              <span>
+                <i class="fa-solid fa-code"></i>
+                IntelliJ IDEA
+              </span>
+
+              <span>
+                <i class="fa-solid fa-chart-line"></i>
+                MATLAB
+              </span>
+
+              <span>
+                <i class="fa-solid fa-server"></i>
+                XAMPP
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Networking -->
+          <div class="skill-card skill-networking">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+
+            <p>Networking, Simulation & Design</p>
+
+            <div class="skill-list">
+
+              <span>
+                <i class="fa-solid fa-network-wired"></i>
+                Cisco Packet Tracer
+              </span>
+
+              <span>
+                <i class="fa-solid fa-diagram-project"></i>
+                Tinkercad
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Design -->
+          <div class="skill-card skill-design">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+
+            <p>Design & Productivity Tools</p>
+
+            <div class="skill-list">
+
+              <span>
+                <i class="fa-solid fa-palette"></i>
+                Canva
+              </span>
+
+              <span>
+                <i class="fa-brands fa-figma"></i>
+                Figma
+              </span>
+
+              <span>
+                <i class="fa-brands fa-microsoft"></i>
+                Microsoft Office
+              </span>
+
+              <span>
+                <i class="fa-solid fa-drafting-compass"></i>
+                AutoCAD
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CREDENTIALS
+    ======================================================== -->
+
+    <section class="page-section" id="credentials">
+
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-head">
+
+          <div>
+            <p class="eyebrow">
+              <i class="fa-solid fa-award"></i>
+              05 / CREDENTIALS
+            </p>
+
+            <h2>Credentials that support the work.</h2>
+          </div>
+
+          <p>
+            Upload scans or photos of your academic honors and relevant
+            certificates to the folders listed in the README.
+          </p>
+
+        </div>
+
+
+        <!-- Credentials Grid -->
+        <div class="credential-grid">
+
+          <!-- Magna Cum Laude -->
+          <article class="credential-card credential-featured">
+
+            <div class="credential-icon">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+
+            <div>
+              <span>ACADEMIC HONOR</span>
+
+              <h3>Magna Cum Laude</h3>
+
+              <p>
+                BS Computer Engineering · Bulacan State University – Meneses Campus
+              </p>
+            </div>
+
+            <a
+              href="assets/credentials/magna.jpg"
+              target="_blank"
+              aria-label="View Magna Cum Laude credential"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- TESDA CSS -->
+          <article class="credential-card">
+
+            <div class="credential-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+
+            <div>
+              <span>CERTIFICATION</span>
+
+              <h3>Introduction to Computer Systems Servicing</h3>
+
+              <p>TESDA</p>
+            </div>
+
+            <a
+              href="assets/credentials/tesda-css.pdf"
+              target="_blank"
+              aria-label="View CSS certificate"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- TESDA ICS -->
+          <article class="credential-card">
+
+            <div class="credential-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+
+            <div>
+              <span>CERTIFICATION</span>
+
+              <h3>Installing & Configuring Computer Systems</h3>
+
+              <p>TESDA</p>
+            </div>
+
+            <a
+              href="assets/credentials/tesda-ics.pdf"
+              target="_blank"
+              aria-label="View computer systems certificate"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- TESDA Networking -->
+          <article class="credential-card">
+
+            <div class="credential-icon">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+
+            <div>
+              <span>CERTIFICATION</span>
+
+              <h3>Setting Up Computer Networks</h3>
+
+              <p>TESDA</p>
+            </div>
+
+            <a
+              href="assets/credentials/tesda-network.pdf"
+              target="_blank"
+              aria-label="View networking certificate"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- freeCodeCamp -->
+          <article class="credential-card">
+
+            <div class="credential-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+
+            <div>
+              <span>CERTIFICATION</span>
+
+              <h3>Responsive Web Design</h3>
+
+              <p>freeCodeCamp</p>
+            </div>
+
+            <a
+              href="assets/credentials/freecodecamp.jpg"
+              target="_blank"
+              aria-label="View Responsive Web Design certificate"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CONTACT
+    ======================================================== -->
+
+    <section class="page-section contact-section" id="contact">
+
+      <div class="container">
+
+        <div class="contact-box">
+
+          <!-- Contact Introduction -->
+          <div>
+
+            <p class="eyebrow">
+              <i class="fa-solid fa-paper-plane"></i>
+              06 / CONTACT
+            </p>
+
+            <h2>Let's connect.</h2>
+
+            <p>
+              For job opportunities, technical collaboration, or professional
+              inquiries, feel free to reach out.
+            </p>
+
+          </div>
+
+
+          <!-- Contact Links -->
+          <div class="contact-list">
+
+            <!-- Email -->
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rainierlopez63@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-envelope"></i>
+
+              <span>
+                <small>EMAIL</small>
+                rainierlopez63@gmail.com
+              </span>
+            </a>
+
+
+            <!-- Phone -->
+            <a href="tel:+639613687472">
+              <i class="fa-solid fa-phone"></i>
+
+              <span>
+                <small>PHONE</small>
+                +63 961 368 7472
+              </span>
+            </a>
+
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/mark-rainier-lopez-1752a034a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+
+              <span>
+                <small>LINKEDIN</small>
+                LinkedIn profile
+              </span>
+            </a>
+
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/rainier-code"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+
+              <span>
+                <small>GITHUB</small>
+                rainier-code
+              </span>
+            </a>
+
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/mark.rainier.lopez.2025"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-facebook"></i>
+
+              <span>
+                <small>FACEBOOK</small>
+                Facebook profile
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         FOOTER
+    ======================================================== -->
+
+    <footer>
+
+      <div class="container footer-inner">
+
+        <span>
+          © 2026 Mark Rainier Lopez
+        </span>
+
+        <span>
+          Computer Engineering
+        </span>
+
+      </div>
+
+    </footer>
+
+  </main>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
