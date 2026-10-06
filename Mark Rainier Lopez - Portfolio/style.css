@@ -3987,3 +3987,14 @@ body.dark .menu-card::after {
   visibility: visible;
   pointer-events: auto;
 }
+
+
+/* =========================================================
+   SKILLS: WIDER CARD FOR DEVELOPMENT & DEPLOYMENT TOOLS
+========================================================= */
+
+@media (min-width: 1101px) {
+  .skill-card.skill-span-8 {
+    grid-column: span 8;
+  }
+}
