@@ -11,6 +11,8 @@ const mobileClose = document.getElementById("mobileClose");
 const sidebarOverlay = document.getElementById("sidebarOverlay");
 
 const themeToggle = document.getElementById("themeToggle");
+const mobileThemeToggle = document.getElementById("mobileThemeToggle");
+const themeToggles = [themeToggle, mobileThemeToggle].filter(Boolean);
 
 const photoModal = document.getElementById("photoModal");
 const photoModalClose = document.querySelector(".photo-modal-close");
@@ -198,39 +200,30 @@ if (savedTheme === "dark") {
 
 function updateThemeIcon() {
 
-  if (!themeToggle) return;
+  const isDark = document.body.classList.contains("dark");
 
-  const icon = themeToggle.querySelector(".theme-icon i");
-  const label = themeToggle.querySelector(".theme-copy strong");
+  themeToggles.forEach(toggle => {
+    const icon = toggle.querySelector(".theme-icon i");
+    const label = toggle.querySelector(".theme-copy strong");
 
-  if (!icon || !label) return;
+    if (icon) {
+      icon.classList.toggle("fa-sun", isDark);
+      icon.classList.toggle("fa-moon", !isDark);
+    }
 
+    if (label) {
+      label.textContent = isDark ? "Light Mode" : "Dark Mode";
+    }
 
-  if (document.body.classList.contains("dark")) {
-
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-
-    label.textContent = "Light Mode";
-
-    themeToggle.setAttribute(
+    toggle.setAttribute(
       "aria-label",
-      "Switch to light mode"
+      isDark ? "Switch to light mode" : "Switch to dark mode"
     );
-
-  } else {
-
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-
-    label.textContent = "Dark Mode";
-
-    themeToggle.setAttribute(
-      "aria-label",
-      "Switch to dark mode"
+    toggle.setAttribute(
+      "title",
+      isDark ? "Switch to light mode" : "Switch to dark mode"
     );
-
-  }
+  });
 
 }
 
@@ -238,9 +231,9 @@ function updateThemeIcon() {
 updateThemeIcon();
 
 
-if (themeToggle) {
+themeToggles.forEach(toggle => {
 
-  themeToggle.addEventListener("click", () => {
+  toggle.addEventListener("click", () => {
 
     document.body.classList.toggle("dark");
 
@@ -261,7 +254,7 @@ if (themeToggle) {
 
   });
 
-}
+});
 
 
 /* =========================================================
@@ -584,5 +577,50 @@ document.addEventListener("keydown", event => {
 
 
   closeSidebar();
+
+});
+
+
+/* =========================================================
+   COPY EMAIL ADDRESS
+========================================================= */
+
+document.querySelectorAll(".copy-email-btn").forEach(button => {
+
+  button.addEventListener("click", async () => {
+
+    const email = button.dataset.copyEmail;
+    const status = button.parentElement.querySelector(".copy-email-status");
+
+    try {
+
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(email);
+      } else {
+        const input = document.createElement("textarea");
+        input.value = email;
+        input.setAttribute("readonly", "");
+        input.style.position = "fixed";
+        input.style.opacity = "0";
+        document.body.appendChild(input);
+        input.select();
+        const copied = document.execCommand("copy");
+        input.remove();
+        if (!copied) throw new Error("Copy command failed");
+      }
+
+      status.textContent = "Email copied to clipboard.";
+
+    } catch {
+
+      status.textContent = "Copy failed. Select the email address to copy it.";
+
+    }
+
+    window.setTimeout(() => {
+      status.textContent = "";
+    }, 3000);
+
+  });
 
 });

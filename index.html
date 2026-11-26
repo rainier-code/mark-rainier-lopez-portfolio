@@ -30,7 +30,7 @@
     <div class="sidebar-top">
 
       <a class="brand" href="#home" data-section="home">
-        <span class="brand-mark">MRL</span>
+        <img class="brand-mark" src="assets/profile.jpg" alt="">
 
         <span class="brand-text">
           <strong>MARK RAINIER</strong>
@@ -213,17 +213,24 @@
     <header class="mobile-header">
 
       <a href="#home" class="mobile-brand" data-section="home">
-        <span class="brand-mark">MRL</span>
+        <img class="brand-mark" src="assets/profile.jpg" alt="">
         <span>MARK RAINIER LOPEZ</span>
       </a>
 
-      <button
-        class="mobile-menu-btn"
-        id="mobileMenu"
-        aria-label="Open navigation"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
+      <div class="mobile-header-actions">
+        <button class="mobile-theme-button" id="mobileThemeToggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+          <span class="theme-icon"><i class="fa-solid fa-moon"></i></span>
+          <span class="theme-copy"><strong>Dark Mode</strong></span>
+        </button>
+
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenu"
+          aria-label="Open navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
 
     </header>
 
@@ -276,6 +283,11 @@
               >
                 <i class="fa-solid fa-file-arrow-down"></i>
                 Download CV
+              </a>
+
+              <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-eye"></i>
+                Preview CV
               </a>
 
             </div>
@@ -657,14 +669,16 @@
 
           </div>
 
-          <a
-            class="btn btn-primary"
-            href="assets/resume.pdf"
-            download
-          >
-            <i class="fa-solid fa-download"></i>
-            Download Resume
-          </a>
+          <div class="resume-actions">
+            <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-eye"></i>
+              Preview Resume
+            </a>
+            <a class="btn btn-primary" href="assets/resume.pdf" download>
+              <i class="fa-solid fa-download"></i>
+              Download Resume
+            </a>
+          </div>
 
         </div>
 
@@ -1894,9 +1908,9 @@
           <!-- Magna Cum Laude -->
           <article class="credential-card credential-featured">
 
-            <div class="credential-icon">
-              <i class="fa-solid fa-medal"></i>
-            </div>
+            <a class="credential-thumb-link" href="assets/credentials/magna.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Magna Cum Laude certificate preview">
+              <img class="credential-preview-thumb" src="assets/credentials/magna.jpg" alt="Magna Cum Laude credential preview">
+            </a>
 
             <div>
               <span>ACADEMIC HONOR</span>
@@ -1911,9 +1925,11 @@
             <a
               href="assets/credentials/magna.jpg"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View Magna Cum Laude credential"
             >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-eye"></i>
+              <span>Preview</span>
             </a>
 
           </article>
@@ -1922,9 +1938,9 @@
           <!-- TESDA CSS -->
           <article class="credential-card">
 
-            <div class="credential-icon">
-              <i class="fa-solid fa-certificate"></i>
-            </div>
+            <a class="credential-thumb-link" href="assets/credentials/tesda-css.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Computer Systems Servicing certificate preview">
+              <img class="credential-preview-thumb" src="assets/credentials/previews/tesda-css.jpg" alt="TESDA Computer Systems Servicing certificate preview">
+            </a>
 
             <div>
               <span>CERTIFICATION</span>
@@ -1937,9 +1953,11 @@
             <a
               href="assets/credentials/tesda-css.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View CSS certificate"
             >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-eye"></i>
+              <span>Preview</span>
             </a>
 
           </article>
@@ -1948,9 +1966,9 @@
           <!-- TESDA ICS -->
           <article class="credential-card">
 
-            <div class="credential-icon">
-              <i class="fa-solid fa-server"></i>
-            </div>
+            <a class="credential-thumb-link" href="assets/credentials/tesda-ics.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Installing and Configuring Computer Systems certificate preview">
+              <img class="credential-preview-thumb" src="assets/credentials/previews/tesda-ics.jpg" alt="TESDA Installing and Configuring Computer Systems certificate preview">
+            </a>
 
             <div>
               <span>CERTIFICATION</span>
@@ -1963,9 +1981,11 @@
             <a
               href="assets/credentials/tesda-ics.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View computer systems certificate"
             >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-eye"></i>
+              <span>Preview</span>
             </a>
 
           </article>
@@ -1974,9 +1994,9 @@
           <!-- TESDA Networking -->
           <article class="credential-card">
 
-            <div class="credential-icon">
-              <i class="fa-solid fa-network-wired"></i>
-            </div>
+            <a class="credential-thumb-link" href="assets/credentials/tesda-network.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Setting Up Computer Networks certificate preview">
+              <img class="credential-preview-thumb" src="assets/credentials/previews/tesda-network.jpg" alt="TESDA Computer Networks certificate preview">
+            </a>
 
             <div>
               <span>CERTIFICATION</span>
@@ -1989,9 +2009,11 @@
             <a
               href="assets/credentials/tesda-network.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View networking certificate"
             >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-eye"></i>
+              <span>Preview</span>
             </a>
 
           </article>
@@ -2000,9 +2022,9 @@
           <!-- freeCodeCamp -->
           <article class="credential-card">
 
-            <div class="credential-icon">
-              <i class="fa-solid fa-mobile-screen-button"></i>
-            </div>
+            <a class="credential-thumb-link" href="assets/credentials/freecodecamp.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Responsive Web Design certificate preview">
+              <img class="credential-preview-thumb" src="assets/credentials/freecodecamp.jpg" alt="freeCodeCamp Responsive Web Design certificate preview">
+            </a>
 
             <div>
               <span>CERTIFICATION</span>
@@ -2015,9 +2037,11 @@
             <a
               href="assets/credentials/freecodecamp.jpg"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View Responsive Web Design certificate"
             >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-eye"></i>
+              <span>Preview</span>
             </a>
 
           </article>
@@ -2054,6 +2078,11 @@
               inquiries, feel free to reach out.
             </p>
 
+            <p class="contact-link-guide">
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              Use the arrow buttons to open my profiles in a new tab.
+            </p>
+
           </div>
 
 
@@ -2061,18 +2090,18 @@
           <div class="contact-list">
 
             <!-- Email -->
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=rainierlopez63@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div class="contact-email-row">
               <i class="fa-solid fa-envelope"></i>
-
-              <span>
+              <div class="contact-email-copy">
                 <small>EMAIL</small>
-                rainierlopez63@gmail.com
-              </span>
-            </a>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=rainierlopez63%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Write an email to rainierlopez63@gmail.com">rainierlopez63@gmail.com</a>
+              </div>
+              <button class="copy-email-btn" type="button" data-copy-email="rainierlopez63@gmail.com">
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <span class="copy-email-status" aria-live="polite"></span>
+            </div>
 
 
             <!-- Phone -->
@@ -2098,6 +2127,7 @@
                 <small>LINKEDIN</small>
                 LinkedIn profile
               </span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow" aria-hidden="true"></i>
             </a>
 
 
@@ -2113,6 +2143,7 @@
                 <small>GITHUB</small>
                 rainier-code
               </span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow" aria-hidden="true"></i>
             </a>
 
 
@@ -2128,6 +2159,7 @@
                 <small>FACEBOOK</small>
                 Facebook profile
               </span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow" aria-hidden="true"></i>
             </a>
 
           </div>
